@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        ol {
+            list-style-type: upper-roman;
+        }
+
+        img {
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f9f9f9;
+        }
+
+        form {
+            margin-top: 30px;
+            max-width: 600px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 12px;
+            display: block;
+        }
+
+        input, select, textarea {
+            padding: 8px;
+            margin: 6px 0 12px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 8px;
+        }
+
+        input[type="submit"] {
+            width: auto;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome</h1>
+
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Steps to Register</h2>
+    <ol>
+        <li>Visit the website</li>
+        <li>Navigate to the registration form</li>
+        <li>Fill in your details</li>
+        <li>Submit the form</li>
+        <li>Wait for confirmation</li>
+    </ol>
+
+    <!-- External Image from Pexels -->
+    <h2>Inspiration</h2>
+    <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg" alt="Teamwork Image from Pexels">
+
+    <!-- Table of Contacts -->
+    <h2>Contact List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alice Johnson</td>
+                <td>123 Main St, Cityville</td>
+                <td>+1234567890</td>
+                <td>alice@example.com</td>
+            </tr>
+            <tr>
+                <td>Bob Smith</td>
+                <td>456 Oak St, Townsville</td>
+                <td>+1987654321</td>
+                <td>bob@example.com</td>
+            </tr>
+            <tr>
+                <td>Carol White</td>
+                <td>789 Pine St, Villagetown</td>
+                <td>+1122334455</td>
+                <td>carol@example.com</td>
+            </tr>
+            <tr>
+                <td>David Black</td>
+                <td>321 Birch St, Hamlet</td>
+                <td>+1223344556</td>
+                <td>david@example.com</td>
+            </tr>
+            <tr>
+                <td>Eve Green</td>
+                <td>654 Cedar St, Metropolis</td>
+                <td>+1445566778</td>
+                <td>eve@example.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+        <!-- Name Field -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <!-- Email Field -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Choose a secure password" minlength="6" required>
+
+        <!-- Date of Birth Field -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <!-- Dropdown (e.g., Country) -->
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="usa">United States</option>
+            <option value="nigeria">Nigeria</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="india">India</option>
+        </select>
+
+        <!-- Radio Buttons (e.g., Gender) -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male" style="display: inline;">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female" style="display: inline;">Female</label>
+
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other" style="display: inline;">Other</label>
+
+        <!-- Checkboxes (e.g., Interests) -->
+        <label>Interests:</label>
+        <input type="checkbox" id="tech" name="interests" value="tech">
+        <label for="tech" style="display: inline;">Technology</label>
+
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports" style="display: inline;">Sports</label>
+
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music" style="display: inline;">Music</label>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+</html>
